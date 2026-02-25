@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 :root {
   --bg: #0e0e11;
@@ -908,6 +909,13 @@ h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
   font-weight: 700;
   color: var(--accent);
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team-name { font-size: 22px; font-weight: 800; }
@@ -1226,7 +1234,7 @@ footer {
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">flowstate<span class="dot">.</span></a>
-    <a href="https://cal.com/flowstatelabs/30min" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    <a href="#book" class="nav-cta">Book a Call</a>
   </div>
 </nav>
 
@@ -1244,7 +1252,7 @@ footer {
         </h1>
         <p class="hero-sub">Two senior leaders from Amazon, Zomato, and $35M-funded startups — backed by AI agents that let us build like a team of 20. We ship production-ready products in weeks, not months. Web apps, mobile, SaaS, AI — whatever you need to build your business. No junior devs. No body shops. Just working software.</p>
         <div class="hero-cta-wrap">
-          <a href="https://cal.com/flowstatelabs/30min" target="_blank" rel="noopener" class="btn-primary">
+          <a href="#book" class="btn-primary">
             Book a Free Strategy Call <span class="arrow">→</span>
           </a>
           <a href="#velocity" class="btn-ghost">See the Velocity Stack</a>
@@ -1296,6 +1304,58 @@ footer {
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     CAPABILITIES
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="capabilities" id="capabilities">
+  <div class="container">
+    <span class="section-label reveal">What We Build</span>
+    <h2 class="reveal reveal-delay-1">Any product. Production-grade. Fast.</h2>
+    <div class="cap-grid">
+      <div class="cap-card reveal reveal-delay-1">
+        <span class="cap-num">01</span>
+        <h3>0 → 1 Product Development</h3>
+        <p class="cap-desc">Full builds from scratch: product strategy, architecture, MVP, launch. Web apps, SaaS, mobile, marketplaces, internal tools — we define what to build and we build it.</p>
+        <div class="cap-details">
+          <span>Consumer apps, SaaS platforms, B2B tools, marketplaces</span>
+          <span>Chrome extensions, mobile apps, API platforms</span>
+          <span>AI-powered features built in where they add real value</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-2">
+        <span class="cap-num">02</span>
+        <h3>Velocity Stack Installation</h3>
+        <p class="cap-desc">Install our AI-first SDLC in your org. Your existing team ships 5x faster — permanently.</p>
+        <div class="cap-details">
+          <span>Claude Code + Linear + GitHub Actions integration</span>
+          <span>Automated code review, PRD-to-ticket generation</span>
+          <span>Built in-house and battle-tested across real projects</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-3">
+        <span class="cap-num">03</span>
+        <h3>AI Features & Integrations</h3>
+        <p class="cap-desc">Add intelligence to your existing product — search, automation, classification, assistants. Production-ready, not notebook experiments.</p>
+        <div class="cap-details">
+          <span>Hybrid RAG search, LLM pipelines, workflow automation</span>
+          <span>LLM-powered clustering, embedding pipelines</span>
+          <span>Processing 10K+ items/day in production</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-4">
+        <span class="cap-num">04</span>
+        <h3>Technical Diligence & Rescue</h3>
+        <p class="cap-desc">Your project is stuck. We unstick it. Fast.</p>
+        <div class="cap-details">
+          <span>Performance audits (we've achieved 200x improvements)</span>
+          <span>Architecture review and refactoring</span>
+          <span>Production stability and observability setup</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
      THE PROBLEM (ANTI-AGENCY)
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <section class="problem" id="problem">
@@ -1330,6 +1390,67 @@ footer {
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     TEAM
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="team" id="team">
+  <div class="container">
+    <span class="section-label reveal">The Team</span>
+    <h2 class="reveal reveal-delay-1">Your co-founding team for hire.</h2>
+    <p class="team-subtitle reveal reveal-delay-2">With us, you get a CPO and a CTO who can get your product up, validated, and maintained in record time — so you can focus on growing it. And you don't have to shell out any equity. When you hire Flowstate Labs, you work directly with us — not a project manager, not a junior dev. Every strategy call, every architecture decision, every code review comes from the people who built systems at Amazon, Zomato, and $35M startups.</p>
+    <div class="team-grid">
+      <!-- Chandan -->
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-header">
+          <div class="team-avatar"><img src="chandan.png" alt="Chandan Luthra" onerror="this.remove();this.parentElement.textContent='CL'"></div>
+          <div>
+            <div class="team-name">Chandan Luthra</div>
+            <div class="team-role">Chief Product Officer</div>
+            <div class="team-edu">IIM Lucknow (India's Top B-School) · BITS Pilani</div>
+          </div>
+        </div>
+        <p class="team-bio">15+ years building and shipping products. Former Amazon, Zomato, and 4 venture studio products. Doesn't just run product — defines what to build, validates the market, designs growth loops, and ships. Led teams of 20+ across product, design, and engineering. When you work with Chandan, you don't just get a CPO — you get a co-founder.</p>
+        <div class="team-wins-label">0 → 1 wins</div>
+        <div class="team-wins">
+          <div class="team-win">Built Littlebird's full product roadmap, led user research, and set up their analytics end-to-end — all within a month. Littlebird is a potential unicorn.</div>
+          <div class="team-win">Led product 0→1 for EmailZap — 100+ weekly signups, 4.7★ Chrome Store rating</div>
+          <div class="team-win">Launched "Deal of the Day" — became Zomato's biggest growth lever</div>
+          <div class="team-win">Reduced product launch time from 6 months to 1 week at Amazon</div>
+        </div>
+        <a href="https://linkedin.com/in/chandanluthra" target="_blank" rel="noopener" class="team-link">LinkedIn ↗</a>
+      </div>
+
+      <!-- Puneet -->
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-header">
+          <div class="team-avatar"><img src="puneet.png" alt="Puneet Gupta" onerror="this.remove();this.parentElement.textContent='PG'"></div>
+          <div>
+            <div class="team-name">Puneet Gupta</div>
+            <div class="team-role">Chief Technology Officer</div>
+            <div class="team-edu">MS CS, Georgia Tech · DTU</div>
+          </div>
+        </div>
+        <p class="team-bio">7+ years as founding/early engineer at venture-backed startups that went on to raise $13M–$35M rounds. The guy who built systems that investors bet millions on — and that still run in production years later. Created the Velocity Stack to bring that same rigor to every Flowstate project.</p>
+        <div class="team-wins-label">Key wins</div>
+        <div class="team-wins">
+          <div class="team-win">Built the core systems behind two funded startups — the code survived fundraising, scale, and is still running today</div>
+          <div class="team-win">Turned a critical performance bottleneck into a 200x improvement that became a selling point during due diligence</div>
+          <div class="team-win">Created the Velocity Stack — our proprietary dev system that compresses a week of engineering into a single day</div>
+          <div class="team-win">Shipped an AI product from zero to 1,000+ active users, processing 10K+ items daily in production</div>
+        </div>
+        <div style="display:flex;gap:16px;">
+          <a href="https://linkedin.com/in/shuttlesworthneo" target="_blank" rel="noopener" class="team-link">LinkedIn ↗</a>
+          <a href="https://github.com/shuttlesworthNEO" target="_blank" rel="noopener" class="team-link">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-credentials reveal">
+      <p><span>Amazon</span> · <span>Zomato</span> · <span>Certa</span> ($35M Series B) · <span>Level AI</span> ($13M Series A) · <span>Sentieo</span> (acquired by AlphaSense for $150M) · <span>Georgia Tech</span> · <span>IIM Lucknow</span> · <span>BITS Pilani</span> · <span>DTU</span></p>
     </div>
   </div>
 </section>
@@ -1405,212 +1526,6 @@ footer {
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     HOW IT WORKS
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-<section class="process" id="process">
-  <div class="container">
-    <span class="section-label reveal">How It Works</span>
-    <h2 class="reveal reveal-delay-1">From call to code in 1 month.</h2>
-    <div class="steps">
-      <div class="step reveal reveal-delay-1">
-        <span class="step-number">01</span>
-        <h3>30-Min Strategy Call</h3>
-        <p>You tell us what you're building or where you're stuck. We identify 2–3 high-impact opportunities and give you a candid assessment — even if the answer is "you don't need us."</p>
-      </div>
-      <div class="step reveal reveal-delay-2">
-        <span class="step-number">02</span>
-        <h3>Scoping & Proposal</h3>
-        <p>If there's a fit, we send a clear scope within 48 hours: what we'll build, the architecture, timeline, and a fixed price. No surprises.</p>
-      </div>
-      <div class="step reveal reveal-delay-3">
-        <span class="step-number">03</span>
-        <h3>Velocity Stack Deploys</h3>
-        <p>Our CPO defines the product. Our CTO architects the system. The Velocity Stack's AI agents execute in parallel — building, testing, documenting — with senior review at every gate.</p>
-      </div>
-      <div class="step reveal reveal-delay-4">
-        <span class="step-number">04</span>
-        <h3>Handoff & Exit</h3>
-        <p>We transfer everything — code, infra, docs, runbooks — and you own it completely. No lock-in. No retainers unless you want one. Hire us, fire us.</p>
-      </div>
-    </div>
-
-    <div class="mid-cta reveal">
-      <p>Ready to skip the 6-month agency timeline?</p>
-      <a href="https://cal.com/flowstatelabs/30min" target="_blank" rel="noopener" class="btn-primary">
-        Book Your Free Call <span class="arrow">→</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     CAPABILITIES
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-<section class="capabilities" id="capabilities">
-  <div class="container">
-    <span class="section-label reveal">What We Build</span>
-    <h2 class="reveal reveal-delay-1">Any product. Production-grade. Fast.</h2>
-    <div class="cap-grid">
-      <div class="cap-card reveal reveal-delay-1">
-        <span class="cap-num">01</span>
-        <h3>0 → 1 Product Development</h3>
-        <p class="cap-desc">Full builds from scratch: product strategy, architecture, MVP, launch. Web apps, SaaS, mobile, marketplaces, internal tools — we define what to build and we build it.</p>
-        <div class="cap-details">
-          <span>Consumer apps, SaaS platforms, B2B tools, marketplaces</span>
-          <span>Chrome extensions, mobile apps, API platforms</span>
-          <span>AI-powered features built in where they add real value</span>
-        </div>
-      </div>
-      <div class="cap-card reveal reveal-delay-2">
-        <span class="cap-num">02</span>
-        <h3>Velocity Stack Installation</h3>
-        <p class="cap-desc">Install our AI-first SDLC in your org. Your existing team ships 5x faster — permanently.</p>
-        <div class="cap-details">
-          <span>Claude Code + Linear + GitHub Actions integration</span>
-          <span>Automated code review, PRD-to-ticket generation</span>
-          <span>Built in-house and battle-tested across real projects</span>
-        </div>
-      </div>
-      <div class="cap-card reveal reveal-delay-3">
-        <span class="cap-num">03</span>
-        <h3>AI Features & Integrations</h3>
-        <p class="cap-desc">Add intelligence to your existing product — search, automation, classification, assistants. Production-ready, not notebook experiments.</p>
-        <div class="cap-details">
-          <span>Hybrid RAG search, LLM pipelines, workflow automation</span>
-          <span>LLM-powered clustering, embedding pipelines</span>
-          <span>Processing 10K+ items/day in production</span>
-        </div>
-      </div>
-      <div class="cap-card reveal reveal-delay-4">
-        <span class="cap-num">04</span>
-        <h3>Technical Diligence & Rescue</h3>
-        <p class="cap-desc">Your project is stuck. We unstick it. Fast.</p>
-        <div class="cap-details">
-          <span>Performance audits (we've achieved 200x improvements)</span>
-          <span>Architecture review and refactoring</span>
-          <span>Production stability and observability setup</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     VS LOVABLE / REPLIT
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-<section class="vs-tools" id="vs-tools">
-  <div class="container">
-    <span class="section-label reveal">Why Not Just Use Lovable or Replit?</span>
-    <h2 class="reveal reveal-delay-1">Not a no-code tool.<br>A co-founding team.</h2>
-    <p class="vs-intro reveal reveal-delay-2">Lovable and Replit are great for generating a UI in an afternoon. We're different in every way that matters when you're building something real — something that needs to survive users, investors, and scale.</p>
-
-    <div class="vs-table reveal reveal-delay-3">
-      <div class="vs-row vs-header">
-        <div class="vs-col vs-feature"></div>
-        <div class="vs-col vs-them">Lovable / Replit</div>
-        <div class="vs-col vs-us">Flowstate Labs</div>
-      </div>
-      <div class="vs-row">
-        <div class="vs-col vs-feature">What you get</div>
-        <div class="vs-col vs-them"><span class="vs-bad">✕</span> A generated UI, maybe a backend</div>
-        <div class="vs-col vs-us"><span class="vs-good">✓</span> A full product — strategy, UX, architecture, code, infra</div>
-      </div>
-      <div class="vs-row">
-        <div class="vs-col vs-feature">Who's steering</div>
-        <div class="vs-col vs-them"><span class="vs-bad">✕</span> You, figuring it out alone</div>
-        <div class="vs-col vs-us"><span class="vs-good">✓</span> A CPO + CTO with 15+ years of experience</div>
-      </div>
-      <div class="vs-row">
-        <div class="vs-col vs-feature">Code quality</div>
-        <div class="vs-col vs-them"><span class="vs-bad">✕</span> Auto-generated, often untestable</div>
-        <div class="vs-col vs-us"><span class="vs-good">✓</span> Production-grade, reviewed against senior engineering standards</div>
-      </div>
-      <div class="vs-row">
-        <div class="vs-col vs-feature">Scalability</div>
-        <div class="vs-col vs-them"><span class="vs-bad">✕</span> Hits a wall fast under real load</div>
-        <div class="vs-col vs-us"><span class="vs-good">✓</span> Built for production from day one (we've handled 10K+ req/day)</div>
-      </div>
-      <div class="vs-row">
-        <div class="vs-col vs-feature">Product thinking</div>
-        <div class="vs-col vs-them"><span class="vs-bad">✕</span> None — it builds whatever you describe</div>
-        <div class="vs-col vs-us"><span class="vs-good">✓</span> We challenge assumptions, validate the market, design growth loops</div>
-      </div>
-      <div class="vs-row">
-        <div class="vs-col vs-feature">When it breaks</div>
-        <div class="vs-col vs-them"><span class="vs-bad">✕</span> You're on your own</div>
-        <div class="vs-col vs-us"><span class="vs-good">✓</span> We own the outcome, fix it, and document everything</div>
-      </div>
-    </div>
-
-    <div class="vs-callout reveal reveal-delay-4">
-      <span class="vs-callout-icon">💡</span>
-      <p>Think of Lovable as a power drill. <strong>We're the architect who designs your building, manages the build, and hands you the keys.</strong></p>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     TEAM
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-<section class="team" id="team">
-  <div class="container">
-    <span class="section-label reveal">The Team</span>
-    <h2 class="reveal reveal-delay-1">Your co-founding team for hire.</h2>
-    <p class="team-subtitle reveal reveal-delay-2">With us, you get a CPO and a CTO who can get your product up, validated, and maintained in record time — so you can focus on growing it. And you don't have to shell out any equity. When you hire Flowstate Labs, you work directly with us — not a project manager, not a junior dev. Every strategy call, every architecture decision, every code review comes from the people who built systems at Amazon, Zomato, and $35M startups.</p>
-    <div class="team-grid">
-      <!-- Chandan -->
-      <div class="team-card reveal reveal-delay-2">
-        <div class="team-header">
-          <div class="team-avatar">CL</div>
-          <div>
-            <div class="team-name">Chandan Luthra</div>
-            <div class="team-role">Chief Product Officer</div>
-            <div class="team-edu">IIM Lucknow (India's Top B-School) · BITS Pilani</div>
-          </div>
-        </div>
-        <p class="team-bio">15+ years building and shipping products. Former Amazon, Zomato, and 4 venture studio products. Doesn't just run product — defines what to build, validates the market, designs growth loops, and ships. Led teams of 20+ across product, design, and engineering. When you work with Chandan, you don't just get a CPO — you get a co-founder.</p>
-        <div class="team-wins-label">0 → 1 wins</div>
-        <div class="team-wins">
-          <div class="team-win">Built Littlebird's full product roadmap, led user research, and set up their analytics end-to-end — all within a month. Littlebird is a potential unicorn.</div>
-          <div class="team-win">Led product 0→1 for EmailZap — 100+ weekly signups, 4.7★ Chrome Store rating</div>
-          <div class="team-win">Launched "Deal of the Day" — became Zomato's biggest growth lever</div>
-          <div class="team-win">Reduced product launch time from 6 months to 1 week at Amazon</div>
-        </div>
-        <a href="https://linkedin.com/in/chandanluthra" target="_blank" rel="noopener" class="team-link">LinkedIn ↗</a>
-      </div>
-
-      <!-- Puneet -->
-      <div class="team-card reveal reveal-delay-3">
-        <div class="team-header">
-          <div class="team-avatar">PG</div>
-          <div>
-            <div class="team-name">Puneet Gupta</div>
-            <div class="team-role">Chief Technology Officer</div>
-            <div class="team-edu">MS CS, Georgia Tech · DTU</div>
-          </div>
-        </div>
-        <p class="team-bio">7+ years as founding/early engineer at venture-backed startups that went on to raise $13M–$35M rounds. The guy who built systems that investors bet millions on — and that still run in production years later. Created the Velocity Stack to bring that same rigor to every Flowstate project.</p>
-        <div class="team-wins-label">Key wins</div>
-        <div class="team-wins">
-          <div class="team-win">Built the core systems behind two funded startups — the code survived fundraising, scale, and is still running today</div>
-          <div class="team-win">Turned a critical performance bottleneck into a 200x improvement that became a selling point during due diligence</div>
-          <div class="team-win">Created the Velocity Stack — our proprietary dev system that compresses a week of engineering into a single day</div>
-          <div class="team-win">Shipped an AI product from zero to 1,000+ active users, processing 10K+ items daily in production</div>
-        </div>
-        <div style="display:flex;gap:16px;">
-          <a href="https://linkedin.com/in/shuttlesworthneo" target="_blank" rel="noopener" class="team-link">LinkedIn ↗</a>
-          <a href="https://github.com/shuttlesworthNEO" target="_blank" rel="noopener" class="team-link">GitHub ↗</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="team-credentials reveal">
-      <p><span>Amazon</span> · <span>Zomato</span> · <span>Certa</span> ($35M Series B) · <span>Level AI</span> ($13M Series A) · <span>Sentieo</span> (acquired by AlphaSense for $150M) · <span>Georgia Tech</span> · <span>IIM Lucknow</span> · <span>BITS Pilani</span> · <span>DTU</span></p>
-    </div>
-  </div>
-</section>
-
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
      RESULTS
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <section class="results" id="results">
@@ -1667,6 +1582,94 @@ footer {
 </section>
 
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     VS LOVABLE / REPLIT
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="vs-tools" id="vs-tools">
+  <div class="container">
+    <span class="section-label reveal">Why Not Just Use Lovable or Replit?</span>
+    <h2 class="reveal reveal-delay-1">Not a no-code tool.<br>A co-founding team.</h2>
+    <p class="vs-intro reveal reveal-delay-2">Lovable and Replit are great for generating a UI in an afternoon. We're different in every way that matters when you're building something real — something that needs to survive users, investors, and scale.</p>
+    <div class="vs-table reveal reveal-delay-3">
+      <div class="vs-row vs-header">
+        <div class="vs-col vs-feature"></div>
+        <div class="vs-col vs-them">Lovable / Replit</div>
+        <div class="vs-col vs-us">Flowstate Labs</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-col vs-feature">What you get</div>
+        <div class="vs-col vs-them"><span class="vs-bad">✕</span> A generated UI, maybe a backend</div>
+        <div class="vs-col vs-us"><span class="vs-good">✓</span> A full product — strategy, UX, architecture, code, infra</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-col vs-feature">Who's steering</div>
+        <div class="vs-col vs-them"><span class="vs-bad">✕</span> You, figuring it out alone</div>
+        <div class="vs-col vs-us"><span class="vs-good">✓</span> A CPO + CTO with 15+ years of experience</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-col vs-feature">Code quality</div>
+        <div class="vs-col vs-them"><span class="vs-bad">✕</span> Auto-generated, often untestable</div>
+        <div class="vs-col vs-us"><span class="vs-good">✓</span> Production-grade, reviewed against senior engineering standards</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-col vs-feature">Scalability</div>
+        <div class="vs-col vs-them"><span class="vs-bad">✕</span> Hits a wall fast under real load</div>
+        <div class="vs-col vs-us"><span class="vs-good">✓</span> Built for production from day one (we've handled 10K+ req/day)</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-col vs-feature">Product thinking</div>
+        <div class="vs-col vs-them"><span class="vs-bad">✕</span> None — it builds whatever you describe</div>
+        <div class="vs-col vs-us"><span class="vs-good">✓</span> We challenge assumptions, validate the market, design growth loops</div>
+      </div>
+      <div class="vs-row">
+        <div class="vs-col vs-feature">When it breaks</div>
+        <div class="vs-col vs-them"><span class="vs-bad">✕</span> You're on your own</div>
+        <div class="vs-col vs-us"><span class="vs-good">✓</span> We own the outcome, fix it, and document everything</div>
+      </div>
+    </div>
+    <div class="vs-callout reveal reveal-delay-4">
+      <span class="vs-callout-icon">💡</span>
+      <p>Think of Lovable as a power drill. <strong>We're the architect who designs your building, manages the build, and hands you the keys.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     HOW IT WORKS
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section class="process" id="process">
+  <div class="container">
+    <span class="section-label reveal">How It Works</span>
+    <h2 class="reveal reveal-delay-1">From call to code in 14 days.</h2>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <span class="step-number">01</span>
+        <span class="step-icon">&#9743;</span>
+        <h3>15-Min Strategy Call</h3>
+        <p>You tell us what you're building or where you're stuck. We identify 2–3 AI opportunities and give you a candid assessment — even if the answer is "you don't need us."</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <span class="step-number">02</span>
+        <span class="step-icon">&#9634;</span>
+        <h3>Scoping & Proposal</h3>
+        <p>If there's a fit, we send a clear scope within 48 hours: what we'll build, the architecture, timeline, and a fixed price. No surprises.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <span class="step-number">03</span>
+        <span class="step-icon">&#9881;</span>
+        <h3>We Build. You Ship.</h3>
+        <p>Our CPO defines the product. Our CTO builds the system. AI agents handle the grunt work. You get production-ready software with full handoff documentation.</p>
+      </div>
+      <div class="step reveal reveal-delay-4">
+        <span class="step-number">04</span>
+        <span class="step-icon">&#10003;</span>
+        <h3>Handoff & Exit</h3>
+        <p>We transfer everything — code, infra, docs — and you own it completely. No lock-in. No retainers unless you want one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━
      FINAL CTA
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <section class="final-cta" id="book">
@@ -1674,9 +1677,7 @@ footer {
     <h2 class="reveal">Let's find the gaps.<br>30 minutes. Free.</h2>
     <p class="final-cta-sub reveal reveal-delay-1">Book a call. We'll look at where you are, identify the highest-impact opportunities, and tell you honestly whether we're the right fit. No sales pitch. No follow-up spam. Just two founders who've been where you are.</p>
     <div class="reveal reveal-delay-2">
-      <a href="https://cal.com/flowstatelabs/30min" target="_blank" rel="noopener" class="btn-primary">
-        Book Your Free Strategy Call <span class="arrow">→</span>
-      </a>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/chandan-flowstatelabs/consulting-call?background_color=0e0e11&text_color=f0f0f4&primary_color=c8ff00" style="min-width:320px;height:700px;"></div>
     </div>
     <p class="cta-email reveal reveal-delay-3">Or email us directly: <a href="mailto:hello@flowstatelabs.ai">hello@flowstatelabs.ai</a></p>
     <div class="trust-signals reveal reveal-delay-4">
@@ -1703,6 +1704,7 @@ footer {
   </div>
 </footer>
 
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script>
 // Scroll reveal
 document.documentElement.classList.add('js-loaded');
